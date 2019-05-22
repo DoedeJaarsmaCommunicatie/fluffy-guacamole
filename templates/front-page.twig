@@ -13,7 +13,7 @@
 
     <main id="app">
         <div class="md:w-1/2 mx-auto content my-12">
-            {{ post.content }}
+            {{ post.content|wpautop }}
         </div>
     </main>
 {% endblock %}
