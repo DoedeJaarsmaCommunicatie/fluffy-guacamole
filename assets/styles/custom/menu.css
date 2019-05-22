@@ -13,6 +13,10 @@
             @apply pr-4 mb-4;
         }
     }
+
+    & a:hover {
+        color: color(theme('colors.secondary.default') a(80%))
+    }
 }
 
 @screen xl {
@@ -24,6 +28,10 @@
             &:last-of-type {
                 @apply mr-0;
             }
+        }
+
+        & .navigation__item--child {
+            @apply pb-2;
         }
     }
 }
