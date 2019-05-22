@@ -21,10 +21,10 @@ module.exports = {
     },
     fontFamily: {
       base: [
-          '"Sofia Pro"',
+          '"sofia-pro"',
       ],
       title: [
-          '"PT Sans"',
+          '"pt-sans"',
       ]
     }
   },
