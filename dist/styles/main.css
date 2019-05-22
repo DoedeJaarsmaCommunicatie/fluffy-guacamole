@@ -800,7 +800,14 @@ html {
     position: relative;
     text-align: left;
     padding-right: 0;
+    display: flex;
   }
+    .nav-menu .navigation__item--wrapper {
+      margin-right: 1rem;
+    }
+      .nav-menu .navigation__item--wrapper:last-of-type {
+        margin-right: 0;
+      }
 }
 
 body {

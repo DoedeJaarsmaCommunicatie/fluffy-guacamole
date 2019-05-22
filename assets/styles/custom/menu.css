@@ -17,6 +17,13 @@
 
 @screen md {
     .nav-menu {
-        @apply block relative text-left pr-0;
+        @apply block relative text-left pr-0 flex;
+        & .navigation__item--wrapper {
+            @apply mr-4;
+
+            &:last-of-type {
+                @apply mr-0;
+            }
+        }
     }
 }
