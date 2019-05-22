@@ -12,7 +12,8 @@ class ContentServiceProvider
     {
         $context['services'] = \Timber\Timber::get_posts([
             'post_type'     => 'service',
-	        'orderby'       => 'date'
+	        'orderby'       => 'date',
+	        'posts_per_page'=> 4
         ]);
         
         return $context;
