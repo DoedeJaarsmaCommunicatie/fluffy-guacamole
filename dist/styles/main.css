@@ -796,7 +796,10 @@ html {
 
 @media (min-width: 768px) {
   .nav-menu {
-    @appy block relative text-left pr-0;
+    display: block;
+    position: relative;
+    text-align: left;
+    padding-right: 0;
   }
 }
 
