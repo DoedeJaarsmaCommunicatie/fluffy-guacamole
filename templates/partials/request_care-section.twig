@@ -15,7 +15,7 @@
             <div class="font-light">
                 {{ theme.theme_mod('care_content')|wpautop }}
 
-                <a href="{{ theme.theme_mod('care_page') }}" class="button button--orange mt-auto">{{ __('Meer Informatie', 'biju') }}</a>
+                <a href="{{ fn('get_the_permalink', theme.theme_mod('care_page')) }}" class="button button--orange mt-auto">{{ __('Meer Informatie', 'biju') }}</a>
             </div>
         </section>
     </div>
