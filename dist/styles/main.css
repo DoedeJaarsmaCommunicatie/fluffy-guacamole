@@ -747,6 +747,14 @@ html {
     .content p:not(:last-of-type) {
       margin-bottom: 1rem;
     }
+    .content a {
+      -webkit-text-decoration-line: underline;
+              text-decoration-line: underline;
+      -webkit-text-decoration-color: #6E389D;
+              text-decoration-color: #6E389D;
+      -webkit-text-decoration-style: solid;
+              text-decoration-style: solid;
+    }
 
   .wrapper--tease__service {
     width: 25%;
