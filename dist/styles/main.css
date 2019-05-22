@@ -744,6 +744,9 @@ html {
     .content h2 {
       font-size: 58px;
     }
+    .content p:not(:last-of-type) {
+      margin-bottom: 1rem;
+    }
 
   .wrapper--tease__service {
     width: 25%;
