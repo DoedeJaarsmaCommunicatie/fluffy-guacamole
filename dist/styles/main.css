@@ -671,6 +671,40 @@ Custom files
   font-size: 58px;
 }
 
+.button {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: all 225ms cubic-bezier(0.2, 0.4, 0.0, 1.0);
+}
+
+.button:hover {
+    box-shadow: unset;
+  }
+
+.button.button--orange {
+    color: white;
+    background: #E67513;
+  }
+
+.button.button--orange:hover {
+      background: rgb(235, 145, 66);
+    }
+
+.button.button--purple {
+    color: white;
+    background: #6E389D;
+  }
+
+.button.button--purple:hover {
+      background: rgb(139, 96, 177);
+    }
+
 html {
   font-size: 18px;
 }

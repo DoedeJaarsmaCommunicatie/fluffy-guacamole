@@ -2,3 +2,32 @@
     @apply font-title;
     font-size: 58px;
 }
+
+.button {
+    @apply shadow rounded-lg px-4 py-2;
+    text-decoration: none !important;
+    cursor: pointer;
+    transition: all 225ms cubic-bezier(0.2, 0.4, 0.0, 1.0);
+
+    &:hover {
+        box-shadow: unset;
+    }
+
+    &.button--orange {
+        color: white;
+        background: theme('colors.secondary.default');
+
+        &:hover {
+            background: color(theme('colors.secondary.default') tint(20%));
+        }
+    }
+
+    &.button--purple {
+        color: white;
+        background: theme('colors.primary.default');
+
+        &:hover {
+            background: color(theme('colors.primary.default') tint(20%));
+        }
+    }
+}
