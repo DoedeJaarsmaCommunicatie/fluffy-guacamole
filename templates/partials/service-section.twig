@@ -1,0 +1,14 @@
+<section data-section="services" class="bg-grey py-12">
+    <div class="content">
+        <h2 class="text-center pb-6">
+            {{ __('Onze diensten') }}
+        </h2>
+    </div>
+    <div class="container md:flex mx-auto">
+        {% for service in services %}
+            <div class="wrapper--tease__service">
+                {% include 'templates/tease/service.twig' with { post: service } only %}
+            </div>
+        {% endfor %}
+    </div>
+</section>

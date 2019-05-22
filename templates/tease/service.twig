@@ -1,0 +1,9 @@
+<a href="{{ post.link }}">
+    <article class="flex flex-col text-center">
+        <img src="{{ post.thumbnail.src('lazy-thumbnail') }}" data-djc-lazy="{{ post.thumbnail.src }}" alt="{{ post.title }}" class="image--tease__service">
+
+        <h3 class="font-bold font-base">{{ post.title }}</h3>
+
+        <p class="font-light font-base">{{ post.preview.length(10).read_more(false).end('') }}</p>
+    </article>
+</a>

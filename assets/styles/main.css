@@ -1,0 +1,19 @@
+@import "tailwindcss/base.css";
+
+@import "tailwindcss/components.css";
+
+/*
+Custom files
+ */
+
+@import './custom/logo.css';
+@import "./custom/header.css";
+@import './custom/components.css';
+@import './custom/content.css';
+@import "./custom/overwrites.css";
+
+
+/*
+END Custom files
+ */
+@import "tailwindcss/utilities.css";

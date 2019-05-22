@@ -1,0 +1,26 @@
+<header class="bg-grey">
+    <div class="container mx-auto py-2">
+        <div class="flex">
+            <section class="ml-auto">
+                <span class="mr-4">
+                    <i class="fas fa-phone fa-flip-horizontal text-black"></i>
+                    <a href="tel:{{ theme.theme_mod('phonenumber') }}">{{ theme.theme_mod('phonenumber') }}</a>
+                </span>
+                <span>
+                    <a href="mailto:{{ theme.theme_mod('emailaddress') }}">{{ theme.theme_mod('emailaddress') }}</a>
+                </span>
+            </section>
+        </div>
+    </div>
+</header>
+<header class="py-6">
+    <div class="container mx-auto">
+        <div class="md:flex">
+            <img class="logo" src="{{ Image(theme.theme_mod('custom_logo')).src }}" alt="{{ site.title }}">
+
+            <nav class="ml-auto mt-auto">
+                {% include 'templates/layouts/helpers/partials/navigation.twig' %}
+            </nav>
+        </div>
+    </div>
+</header>

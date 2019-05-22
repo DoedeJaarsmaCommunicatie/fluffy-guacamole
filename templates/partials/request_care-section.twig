@@ -1,0 +1,20 @@
+<section class="container mx-auto py-12">
+    <div class="md:flex">
+        <aside class="md:w-1/3">
+            {% set _careAfbeelding = Image(theme.theme_mod('care_image')) %}
+            <img
+                    src="{{ _careAfbeelding.src('lazy-thumbnail') }}"
+                    data-djc-lazy="{{ _careAfbeelding }}"
+                    alt="{{ theme.theme_mod('care_title') }}"
+                    class="care--image"
+            >
+        </aside>
+        <section class="content md:w-2/3 ml-8">
+            <h2>{{ theme.theme_mod('care_title') }}</h2>
+
+            <div class="font-light">
+                {{ theme.theme_mod('care_content')|wpautop }}
+            </div>
+        </section>
+    </div>
+</section>

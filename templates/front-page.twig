@@ -1,0 +1,19 @@
+{% extends 'templates/layouts/app.twig' %}
+
+{% block content %}
+    <header class="hero-image__wrapper">
+        <picture class="hero-image__pic">
+            <img
+                    src="{{ post.thumbnail('lazy-thumbnail') }}"
+                    data-djc-lazy="{{ post.thumbnail.src }}"
+                    alt="{{ post.thumbnail.alt }}"
+                    title="{{ post.thumbnail.title }}">
+        </picture>
+    </header>
+
+    <main id="app">
+        <div class="md:w-1/2 mx-auto content my-12">
+            {{ post.content }}
+        </div>
+    </main>
+{% endblock %}

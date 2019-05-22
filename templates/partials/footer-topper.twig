@@ -1,0 +1,11 @@
+{% set _footerAboutImg = Image(theme.theme_mod('about_image')) %}
+<style>
+    .mapped-bg {
+        background-image: url({{ _footerAboutImg.src }});
+
+    }
+</style>
+
+<div class="md:flex bg-primary mapped-bg">
+    {% include 'templates/content/about.twig' %}
+</div>

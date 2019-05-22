@@ -1,0 +1,4 @@
+.heading1 {
+    @apply font-title;
+    font-size: 58px;
+}

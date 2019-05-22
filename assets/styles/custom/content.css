@@ -1,0 +1,63 @@
+@screen md {
+    html {
+        font-size: 22px;
+    }
+
+    * {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+}
+
+.hero-image__pic {
+    min-width: 100vw;
+    max-height: 500px;
+}
+
+.content {
+    @apply font-base;
+
+    & h2 {
+        @apply font-title;
+        font-size: 58px;
+    }
+}
+
+
+.mapped-bg {
+    background-size: cover;
+    background-position: center center;
+}
+
+
+@screen md {
+
+    .wrapper--tease__service {
+        width: 25%;
+
+        margin-left: 2rem;
+        margin-right: 2rem;
+
+        &:first-of-type {
+            margin-left: 0;
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        & .image--tease__service {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .mapped-bg {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        min-height: 550px;
+    }
+}
