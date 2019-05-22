@@ -4,7 +4,7 @@
     <p class="font-light">
         {{ theme.theme_mod('address') }}
     </p>
-    <p class="font-light">
+    <p class="font-light mb-4">
         {{ theme.theme_mod('postalcode') }} {{ theme.theme_mod('city') }}
     </p>
 
@@ -21,7 +21,7 @@
     {% endif %}
 
     {% if theme.theme_mod('emailaddress') %}
-        <p>
+        <p class="my-4">
             <strong>
                 <a href="mailto:{{ theme.theme_mod('emailaddress') }}">{{ theme.theme_mod('emailaddress') }}</a>
             </strong>

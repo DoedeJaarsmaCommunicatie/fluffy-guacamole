@@ -1,6 +1,26 @@
 {% include 'templates/partials/service-section.twig' %}
 {% include 'templates/partials/request_care-section.twig' %}
 {% include 'templates/partials/footer-topper.twig' %}
-<footer>
+<footer class="bg-grey">
+    <div class="container mx-auto py-8">
+        <div class="flex">
+            <img class="logo" src="{{ Image(theme.theme_mod('custom_logo')).src }}" alt="{{ site.title }}">
 
+            <nav class="ml-8">
+                {% for item in footerMenu.items %}
+                    <a class="footer-nav" href="{{ item.link }}">{{ item.title }}</a>
+                {% endfor %}
+            </nav>
+
+            <aside class="ml-auto text-right">
+                <div class="mb-2">
+                    <i class="fas fa-phone fa-flip-horizontal text-black"></i>
+                    <a href="tel:{{ theme.theme_mod('phonenumber') }}">{{ theme.theme_mod('phonenumber') }}</a>
+                </div>
+                <div>
+                    <a href="mailto:{{ theme.theme_mod('emailaddress') }}">{{ theme.theme_mod('emailaddress') }}</a>
+                </div>
+            </aside>
+        </div>
+    </div>
 </footer>
