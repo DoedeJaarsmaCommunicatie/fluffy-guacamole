@@ -768,6 +768,7 @@ html {
 
   .hero-image__pic img {
     width: 100vw;
+    min-height: 500px;
   }
 }
 
