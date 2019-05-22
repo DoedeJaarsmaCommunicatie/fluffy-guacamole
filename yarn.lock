@@ -5195,6 +5195,11 @@ postcss-page-break@^2.0.0:
   dependencies:
     postcss "^7.0.2"
 
+postcss-pixels-to-rem@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/postcss-pixels-to-rem/-/postcss-pixels-to-rem-0.8.0.tgz#48de500862d34f89126f123c34f0d247135f541b"
+  integrity sha1-SN5QCGLTT4kSbxI8NPDSRxNfVBs=
+
 postcss-place@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/postcss-place/-/postcss-place-4.0.1.tgz#e9f39d33d2dc584e46ee1db45adb77ca9d1dcc62"

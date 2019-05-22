@@ -1,0 +1,22 @@
+.nav-menu {
+    @apply ml-auto mt-auto hidden absolute text-right pr-4;
+
+    &.active {
+        @apply block;
+        top: 100%;
+        z-index: 999;
+        left: 0;
+        background: #f8f8f8;
+        width: 100%;
+
+        & .navigation__item--child__wrapper {
+            @apply pr-4 mb-4;
+        }
+    }
+}
+
+@screen md {
+    .nav-menu {
+        @appy block relative text-left pr-0;
+    }
+}

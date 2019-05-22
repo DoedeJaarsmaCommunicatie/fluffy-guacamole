@@ -11,7 +11,8 @@ class ContentServiceProvider
 	public function addServices($context)
     {
         $context['services'] = \Timber\Timber::get_posts([
-                'post_type'     => 'service'
+            'post_type'     => 'service',
+	        'orderby'       => 'date'
         ]);
         
         return $context;

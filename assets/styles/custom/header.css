@@ -24,9 +24,3 @@
         }
     }
 }
-
-@screen md {
-    .logo {
-        max-height: 65px;
-    }
-}

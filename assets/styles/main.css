@@ -10,6 +10,7 @@ Custom files
 @import "./custom/header.css";
 @import './custom/components.css';
 @import './custom/content.css';
+@import './custom/menu.css';
 @import "./custom/overwrites.css";
 
 

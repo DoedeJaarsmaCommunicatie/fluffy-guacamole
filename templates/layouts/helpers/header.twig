@@ -1,6 +1,6 @@
 <header class="bg-grey">
     <div class="container mx-auto py-2">
-        <div class="flex">
+        <div class="md:flex px-2 md:px-0">
             <section class="ml-auto">
                 <span class="mr-4">
                     <i class="fas fa-phone fa-flip-horizontal text-black"></i>
@@ -13,14 +13,26 @@
         </div>
     </div>
 </header>
-<header class="py-6">
+<header class="py-6 px-4 md:px-0 relative">
     <div class="container mx-auto">
-        <div class="md:flex">
-            <img class="logo" src="{{ Image(theme.theme_mod('custom_logo')).src }}" alt="{{ site.title }}">
+        <div class="flex">
+            <a href="/">
+                <img class="logo" src="{{ Image(theme.theme_mod('custom_logo')).src }}" alt="{{ site.title }}">
+            </a>
 
-            <nav class="ml-auto mt-auto">
+            <button class="md:hidden ml-auto js-menu__toggle">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <nav class="nav-menu">
                 {% include 'templates/layouts/helpers/partials/navigation.twig' %}
             </nav>
         </div>
     </div>
 </header>
+
+<script>
+    document.querySelector('.js-menu__toggle').addEventListener('click', function () {
+        document.querySelector('.nav-menu').classList.toggle('active')
+    })
+</script>
