@@ -60,8 +60,6 @@ html {
     }
 
     .content {
-        @apply px-0;
-
         & h2 {
             font-size: 58px;
         }
@@ -92,6 +90,17 @@ html {
         }
     }
 
+    .hero-image__pic img {
+        width: 100vw;
+        min-height: 500px;
+    }
+}
+
+@screen xl {
+    .content {
+        @apply px-0;
+    }
+
     .mapped-bg {
         background-size: contain;
         background-repeat: no-repeat;
@@ -100,10 +109,5 @@ html {
         &::before {
             content: unset;
         }
-    }
-
-    .hero-image__pic img {
-        width: 100vw;
-        min-height: 500px;
     }
 }

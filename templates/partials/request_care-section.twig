@@ -1,6 +1,6 @@
 <section class="container mx-auto py-12">
-    <div class="md:flex">
-        <aside class="md:w-1/3">
+    <div class="lg:flex">
+        <aside class="lg:w-1/3">
             {% set _careAfbeelding = Image(theme.theme_mod('care_image')) %}
             <img
                     src="{{ _careAfbeelding.src('lazy-thumbnail') }}"
@@ -9,13 +9,13 @@
                     class="care--image"
             >
         </aside>
-        <section class="content md:w-2/3 md:ml-8 mt-8 md:mt-0">
+        <section class="content lg:w-2/3 md:ml-8 mt-8 lg:mt-0">
             <h2>{{ theme.theme_mod('care_title') }}</h2>
 
             <div class="font-light">
                 {{ theme.theme_mod('care_content')|wpautop }}
 
-                <a href="{{ theme.theme_mod('care_page') }}" class="button button--orange">{{ __('Meer Informatie', 'biju') }}</a>
+                <a href="{{ theme.theme_mod('care_page') }}" class="button button--orange mt-auto">{{ __('Meer Informatie', 'biju') }}</a>
             </div>
         </section>
     </div>

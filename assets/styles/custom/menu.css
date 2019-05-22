@@ -15,7 +15,7 @@
     }
 }
 
-@screen md {
+@screen xl {
     .nav-menu {
         @apply block relative text-left pr-0 flex;
         & .navigation__item--wrapper {
